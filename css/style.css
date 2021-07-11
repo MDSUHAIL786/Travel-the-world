@@ -1,0 +1,605 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;1,300;1,400&display=swap');
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+
+}
+
+html{
+    font-size:62.5%;
+    color: black;
+    font-weight: 500;
+}
+h1,h2,h3{
+    font-weight: 600;
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 0.5rem;
+    
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+   
+   
+    
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    
+    
+    
+    
+}
+p,li{
+    letter-spacing: 3px;
+    font-size: 1.66em;
+    margin-bottom: 1.2em;
+    font-size: 400;
+    list-style: none;
+    
+    
+}
+.container{
+    max-width: 1200px;
+    width:73%;
+    margin:0 auto;
+}
+.backgrd-gray{
+    background-color: rgb(117, 114, 114);
+}
+.backgrd-pink{
+    background-color: rgb(245, 57, 32);
+}
+
+.lg-font{
+    font-size: 2em;
+}
+.sml-font{
+    font-size: 1.5rem;
+}
+.font-weight{
+    font-weight: 900;
+}
+.txt-green{
+    color: lightgreen;
+}
+.txt-red{
+    color: rgb(236, 39, 39);
+}
+.txt-black{
+    color: rgb(8, 8, 8);
+}
+.txt-white{
+    color:white;
+}
+.txt-uppercase{
+    text-transform: uppercase;
+}
+.dark-color{
+    background-color: #263238;
+}
+.header{
+    position: relative;
+    height: 95vh;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("../img/header-image.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.navgtn .logo{
+    float: left;
+}
+.navgtn .navitems{
+    float: right;
+    padding-top: 3.3rem;
+}
+
+.navgtn::after{
+    
+    content: "";
+    display: block;
+    clear: both;
+    
+}
+
+.navgtn .navitems .item {
+    display: inline-block;
+    
+}
+
+.navgtn .logo{
+    padding: 1.2rem;
+}
+
+.navitems a{
+    
+    padding-bottom: 1.2rem;
+    margin-right:2em ;
+    
+}
+
+
+.navgtn .navitems a:hover{
+    
+    text-decoration: underline;
+    
+}
+.btn{
+    display: inline-block;
+    padding:0.5em 1.5rem;
+    margin: 0.5em 0;
+    font-weight: 900;
+    text-transform: uppercase;
+    
+}
+.primary-btn{
+    background-color:lightgoldenrodyellow;
+    border-radius: 100px;
+}
+.secondary-btn{
+    background-color:white;
+    border-radius: 100px;
+    border: 1.5px solid red;
+}
+.content{
+    line-height: 1.5;
+}
+
+
+
+
+/* .content h1{
+    display: inline;
+    /* border: 1px solid white; */
+/* } */
+/* .conten h1::after{
+    content:"";
+    display: inline-block; */
+    /* clear: both;
+}
+.content h1{
+    display: inline-block;
+    
+    margin-left: 50vw;
+    margin-top: 30vh;
+    transform:translate(-50%,-50%);
+}
+
+.content p{
+    display: inline-block;
+    /* border: 1px solid white; */
+    /* margin-left: 218px;
+/* } */ 
+.content{
+    /* border: 1px solid white; */
+    position: absolute;
+    text-align: center; 
+    top: 50%;
+    left: 30%;
+    transform: translate(-20%,-50%);
+} 
+
+/* ########   showcase styling      ########### */
+
+.showcase{
+    /* background: #ddd; */
+    padding: 10rem 0;
+    background-color: #ddd;
+    
+}
+.row{
+    /* border: 1px solid red; */
+    height: 350px;
+    box-shadow: 0px 0px 5px 5px rgb(199, 197, 197);
+}
+.row1{
+    margin-bottom: 10rem;
+}
+.row1 .imgbox,.row2 .textbox{
+    float: left;
+    /* border: 1px solid black; */
+    width: 50%;
+   
+}
+.row .imgbox{
+    height:100% ;
+    width: 50%;
+}
+.row2 .imgbox,.row1 .textbox{
+    float: right;
+    /* border: 1px solid black; */
+    width: 50%;
+   
+}
+.row .textbox{
+    padding:3rem;
+    height: 100%;
+}
+.row img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.row h1{
+    margin-bottom:3.2rem;
+}
+.row .textbox{
+    background-color: white;
+}
+.row p{
+    font-weight: 580;
+    
+}
+.row .textbox::after{
+    content: "";
+    display:block;
+    clear: both;
+}
+
+.btn:hover{
+    background-color: rgb(238, 235, 235);
+
+}
+.feature{
+    padding:10rem 0px;
+}   
+.box-wrapper{
+    /* border: 2px solid red; */
+    color: white;
+    box-shadow: 5px 5px 5px 0.2px rgb(43, 42, 42);
+}
+.box1{
+    width: 33.33%;
+    
+    text-align: center;
+    padding-bottom: 0.6rem;
+    padding-top: 3rem;
+    
+    float: left;
+}
+.box2,.box3{
+    width: 33.33%;
+    /* border: 1px solid red;
+    border: 1px solid black; */
+    text-align: center;
+    padding-bottom: 2.5rem;
+    padding-top: 3rem;
+    
+    float: left;
+}
+
+.box-wrapper::after{
+    content:"";
+    display: block;
+    clear:both;
+}
+.feature h2{
+    /* color: black; */
+    font-size: 2.2rem;
+    text-transform: capitalize;
+    
+}
+.box1,.box3{
+
+    background-color: #263238;
+    
+}
+.box2{
+    /* padding-bottom: 4.5rem; */
+    background: linear-gradient(25deg,#d64c7f,#ee4758 50%);
+
+}
+.line-space{
+    line-height: 4.2rem;
+}
+.foot{
+    
+    height: 11rem;
+    background-color: #263238;
+    padding: 1rem;
+    text-align: center;
+}
+.social-tag i{
+    margin:1.2rem;
+}
+.social-tag a:hover{
+   color: lightblue;
+}
+
+
+/* ############   about page styling        3############## */
+
+.about h1{
+    padding:5rem 0px;
+    padding-bottom: 0px;
+    font-weight: 800;
+    text-transform: capitalize;
+    
+        
+}
+.about h1::after{
+    content: "";
+    display: block;
+    border: 0.2rem solid red;
+    /* width: 2rem; */
+}
+.about p{
+    padding-top: 2rem;
+    
+}
+.data1 ,.data2{
+    display: inline;
+    /* border: 1px solid red; */
+    line-height: 0.9rem;
+    padding-top: 1.7rem;
+    
+}
+.data1{
+    float: left;
+    padding-left: 12%;
+}
+.data2{
+    float: right;
+    padding-right: 12%;
+}
+
+.about li::before{
+    
+    content: "\2713";
+    color: red;
+    font-weight: 2rem;
+    padding-right: 1.5rem;
+    
+
+}
+.highpiont::after{
+    content:"";
+    display: block;
+    clear: right;
+}
+.count{
+    margin-top: 2rem;
+    /* border: 2px solid black; */
+    
+}
+.about .count p{
+    line-height: 0.2rem;
+    padding-top: 1rem;
+    letter-spacing: 0.1rem;
+}
+.count .count-items{
+    display: inline;
+    /* border: 1px solid red; */
+    float: left;
+    text-align: center;
+    width: 25%;
+    
+}
+.count-items span{
+    font-weight: 1000;
+    font-size: 3rem;
+    color: red ;
+}
+.count::after{
+    content:"";
+    display: block;
+    clear: both;
+}
+
+.contactus{
+    /* border: 2px solid black; */
+    margin-top: 2rem;
+    
+    background-image: linear-gradient( 109.6deg,  rgba(254,87,98,1) 11.2%, rgba(255,107,161,1) 99.1% );
+    box-shadow: 0px 0px 5px 2px rgb(155, 152, 152);
+}
+.contactus p{
+    display: inline-block;
+    /* text-align: center; */
+    padding-top: 3rem;
+    padding-left: 1rem;
+    font-weight: 1000;
+}
+.contactus a{
+    float: right;
+    color: black;
+    border: 1px solid black;
+    width: 35%;
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: 900;
+    margin-right: 2rem;
+    /* mar%gin-bottom: 5rem; */
+}
+.contactus::after{
+    content: "";
+    display: block;
+    clear: both;
+
+}
+
+.contactus a:hover{
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(111,231,176,1) 0%, rgba(154,198,242,1) 100.2% );
+}
+
+/* ###########      contact form   ##############  */
+
+body .comp-work{
+    background-color: rgb(241, 239, 239);
+    padding-top: 4rem;
+    
+}
+.company{
+    /* border: 2px solid black; */
+    padding-bottom: 2rem;
+    
+    
+    
+}
+.company-address{
+    /* border: 1px dotted red; */
+    width:49% ;
+    float: left;
+    background-color: white;
+    padding:0 0.8rem;
+    padding-top:1rem;
+    height: 650px;
+    margin-bottom: 5.5rem;
+}
+
+.company-form{
+    /* border: 1px dotted red; */
+    width: 49%;
+    float: right;
+    background-color: white;
+    padding:0 0.8rem;
+    padding-top:1rem;
+    height:650px;
+}
+
+
+.company::after{
+    content:"";
+    display: block;
+    clear: both;
+}
+
+.location,.call,.mail{
+    /* border: 1px solid green; */
+    margin-bottom: 1rem;
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+    line-height: 3rem;
+    color: rgb(177, 173, 173);
+    
+}
+.company-address h2, .company-address p{
+    letter-spacing: 0.1rem;
+    font-size: 1.5rem;
+
+}
+
+.company-photo .comp-img{
+    /* height: 5 */
+    /* background: url(../img/company-img.jpg); */
+    /* height: 45; */
+    max-width: 100%;
+    min-height: 10%;
+    /* margin-top: 2rem; */
+    object-fit: cover;
+    object-position: right;
+
+    
+}
+
+    
+.company-form h1{
+    border-bottom: 0.5rem solid red;
+    text-transform: capitalize;
+
+    
+}
+
+.company-form p{
+    padding-top: 2rem;
+    
+}
+.company-form label{
+    display: block;
+    font-size: 1.5rem;
+    
+}
+
+.company-form label::after{
+    content: "*";
+    color: red;
+}
+.comp-work .company-form input{
+    width: 100%;
+    margin-bottom: 0.5rem;
+    
+}
+.company-form textarea{
+    width: 100%;
+    height: 300px;
+    
+}
+
+.submit-btn{
+    display: block;
+    text-align: center;
+    padding:0.5rem 3em;
+    background:#e63946;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin: 0 auto;
+    color: white;
+}
+
+/* #########responsive### */
+
+@media (max-width:500px){
+    html{
+        font-size: 7px;
+    }
+    .navigation h2,.navigation .items{
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .row{
+        height: auto;
+        width: 100%;
+    }
+    .row .imgbox,.row .textbox{
+        float: none;
+        width: 100%;
+        text-align: center ;
+    }
+    .feature .box{
+        float: none;
+        width: 100%;
+        box-shadow: 5px 5px 10px rgb(43, 42, 42);
+
+    }
+    .feature .box2,
+    .feature .box3{
+        margin-top: 5rem;
+    }
+    .box-wrapper{
+        /* border: 2px solid red; */
+        
+        box-shadow: none;
+    }
+
+    .data1,.data2{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    .contactus p , .contactus a{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    .comp-work .company{
+        font-size: 0.2px;
+    
+    }
+       
+    .comp-work .company-form{
+        font-size: 0.2px;
+       
+    }
+
+}
